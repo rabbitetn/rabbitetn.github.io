@@ -302,65 +302,16 @@
 
       
         
-          
-            <p>​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 <em>v1</em>，但这货已经停产，能买到的只有<em>v2</em> 。于是买了 R6100。</p>
+          <p>​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 <em>v1</em>，但这货已经停产，能买到的只有<em>v2</em> 。于是买了 R6100。</p>
 <h3 id="原厂系统"><a href="#原厂系统" class="headerlink" title="原厂系统"></a>原厂系统</h3><p>​    用了几天原厂系统，感觉没有什么亮点，系统设置响应非常慢，于是准备直接安装LEDE。</p>
 <h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>​    官方提供四种安装方法<a href="https://wiki.openwrt.org/doc/howto/generic.flashing" target="_blank" rel="noopener">Installing OpenWrt</a> 。我使用Method 1: via OEM firmware安装LEDE，选择Method 2: via Bootloader and an Ethernet port 恢复原厂固件。</p>
-<!--read more-->
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
-<li><p>下载 R6100 固件<a href="https://downloads.lede-project.org/releases/17.01.4/targets/ar71xx/nand/lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img" target="_blank" rel="noopener">lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img</a></p>
-</li>
-<li><p>网线连接路由器LAN口</p>
-</li>
-<li><p>打开路由器管理端</p>
-</li>
-<li><p>点击管理-固件升级</p>
-</li>
-<li><p>选择步骤1下载的固件，上传</p>
-</li>
-<li><p>点击安装，waiting…</p>
-</li>
-<li><p>看到重新获取到IP后就可以登陆管理端了</p>
-</li>
-<li><p>第一次登陆没有密码</p>
-<p><img src="/images/2017120901.PNG" alt=""></p>
-</li>
-<li><p>状态信息</p>
-</li>
-</ol>
-<p><img src="/images/2017122902.PNG" alt=""></p>
-<h3 id="恢复原厂固件"><a href="#恢复原厂固件" class="headerlink" title="恢复原厂固件"></a>恢复原厂固件</h3><ol>
-<li><p>网件中文官网下载固件R6100-V1.2.0.4.img，并放在用户目录下</p>
-</li>
-<li><p>网线连接路由器LAN口</p>
-</li>
-<li><p>开启TFTP client</p>
-<p><img src="/images/2017122903.PNG" alt=""></p>
-</li>
-<li><p>打开cmd，输入ping 192.168.1.1 –t</p>
-</li>
-<li><p>再打开一个cmd，输入TFTP -i 192.168.1.1 PUT R6100-V1.2.0.4.img</p>
-</li>
-<li><p>戳reset不放，拔掉电源再接上，看第一个cmd窗口ping通了后，在第二个cmd窗口回车</p>
-</li>
-<li><p>第二个cmd窗口出现传输成功提示后，松开reset</p>
-</li>
-<li><p>waiting…</p>
-</li>
-<li><p>看到重新获取到IP后就可以登陆原厂管理端了</p>
-</li>
-</ol>
-<h3 id="有什么用呢"><a href="#有什么用呢" class="headerlink" title="有什么用呢"></a>有什么用呢</h3><p>​    你猜</p>
-<h3 id="敲黑板、重点来了"><a href="#敲黑板、重点来了" class="headerlink" title="敲黑板、重点来了"></a>敲黑板、重点来了</h3><ol>
-<li>LEDE是openwrt的一个分支</li>
-<li><strong>WNDR4300</strong> <em>v1</em>可以安装openwrt/lEDE，但已经停产</li>
-<li><strong>WNDR4300</strong> <em>v2</em> 目前不能安装openwrt/lEDE</li>
-<li><strong>R6100</strong> 可以安装 openwrt/lEDE</li>
-<li><strong>R6100</strong> 5G信号问题已经解决</li>
-</ol>
-<p><a href="https://www.vultr.com/?ref=7285317" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/28/r6100/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
