@@ -38,10 +38,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -68,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Tech," />
+  <meta name="keywords" content="LEDE,openwrt,NETGEAR," />
 
 
 
@@ -80,7 +76,7 @@
 
 
 <meta name="description" content="​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。只有折腾 R6100了。">
-<meta name="keywords" content="Tech">
+<meta name="keywords" content="LEDE,openwrt,NETGEAR">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NETGEAR R6100 安装lEDE">
 <meta property="og:url" content="http://rabbitetn.com/2017/12/28/netgear-r6100/index.html">
@@ -91,7 +87,7 @@
 <meta property="og:image" content="http://rabbitetn.com/images/2017122902.PNG">
 <meta property="og:image" content="http://rabbitetn.com/images/2017122903.PNG">
 <meta property="og:image" content="https://www.vultr.com/media/banner_1.png">
-<meta property="og:updated_time" content="2017-12-29T04:39:06.000Z">
+<meta property="og:updated_time" content="2017-12-29T04:50:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NETGEAR R6100 安装lEDE">
 <meta name="twitter:description" content="​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。只有折腾 R6100了。">
@@ -106,9 +102,9 @@
     scheme: 'Mist',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: ,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn","fancybox":false}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -278,6 +274,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -313,7 +331,7 @@
 <li><p>下载 R6100 固件<a href="https://downloads.lede-project.org/releases/17.01.4/targets/ar71xx/nand/lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img" target="_blank" rel="noopener">lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img</a></p>
 </li>
 <li><p>网线连接路由器LAN口</p>
-<ul>
+</li>
 <li><p>打开路由器管理端</p>
 </li>
 <li><p>点击管理-固件升级</p>
@@ -325,12 +343,11 @@
 <li><p>重新获取到IP后，登陆管理端</p>
 </li>
 <li><p>第一次登陆没有密码</p>
-<p><img src="/images/2017120901.PNG" alt=""></p>
-</li>
-<li><p>登陆后可以看到状态信息</p>
 </li>
 </ul>
-</li>
+<p><img src="/images/2017120901.PNG" alt=""></p>
+<ul>
+<li>登陆后可以看到状态信息</li>
 </ul>
 <p><img src="/images/2017122902.PNG" alt=""></p>
 <h3 id="恢复原厂固件"><a href="#恢复原厂固件" class="headerlink" title="恢复原厂固件"></a>恢复原厂固件</h3><p>​    想要恢复原厂固件也是可以的，步骤如下</p>
@@ -338,9 +355,9 @@
 <li><p>网线连接路由器LAN口</p>
 </li>
 <li><p>网件<strong>中文</strong>官网下载固件R6100-V1.2.0.4.img，并放在用户目录(eg. C:\Users\apple)下</p>
-<ul>
+</li>
 <li><p>开启TFTP client</p>
-<p><img src="/images/2017122903.PNG" alt=""></p>
+<p>   <img src="/images/2017122903.PNG" alt=""></p>
 </li>
 <li><p>打开cmd，输入ping 192.168.1.1 –t</p>
 </li>
@@ -355,15 +372,18 @@
 <li><p>重新获取到IP后，打开管理端确认</p>
 </li>
 </ul>
-</li>
-</ul>
 <h3 id="有什么用呢"><a href="#有什么用呢" class="headerlink" title="有什么用呢"></a>有什么用呢</h3><p>​    你猜</p>
 <h3 id="敲黑板"><a href="#敲黑板" class="headerlink" title="敲黑板"></a>敲黑板</h3><ul>
-<li>LEDE是openwrt的一个分支</li>
-<li><strong>WNDR4300</strong> <em>v1</em>可以安装openwrt/lEDE，但已经停产</li>
-<li><strong>WNDR4300</strong> <em>v2</em> 目前不能安装openwrt/lEDE</li>
-<li><strong>R6100</strong> 可以安装 openwrt/lEDE</li>
-<li><strong>R6100</strong> 5G信号问题已经解决</li>
+<li><p>LEDE是openwrt的一个分支</p>
+</li>
+<li><p><strong>WNDR4300</strong> <em>v1</em>可以安装openwrt/lEDE，但已经停产</p>
+</li>
+<li><p><strong>WNDR4300</strong> <em>v2</em> 目前不能安装openwrt/lEDE</p>
+</li>
+<li><p><strong>R6100</strong> 可以安装 openwrt/lEDE</p>
+</li>
+<li><p><strong>R6100</strong> 5G信号问题已经解决<br><br><br><br><br><br></p>
+</li>
 </ul>
 <p><a href="https://www.vultr.com/?ref=7285317" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banner_1.png" alt=""></a></p>
 
@@ -383,7 +403,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tech/" rel="tag"># Tech</a>
+            <a href="/tags/LEDE/" rel="tag"># LEDE</a>
+          
+            <a href="/tags/openwrt/" rel="tag"># openwrt</a>
+          
+            <a href="/tags/NETGEAR/" rel="tag"># NETGEAR</a>
           
         </div>
       
@@ -455,7 +479,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">RabbitETN</p>
-              <p class="site-description motion-element" itemprop="description">十八只兔子 RabbitETN</p>
+              <p class="site-description motion-element" itemprop="description">RabbitETN, to known the world.</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -472,13 +496,22 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -609,8 +642,6 @@
 
 
 
-  
-
 
 
 
@@ -645,11 +676,6 @@
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
