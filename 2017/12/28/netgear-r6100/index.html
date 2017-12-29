@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Tech," />
 
 
 
@@ -79,21 +79,22 @@
 
 
 
-<meta name="description" content="​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。于是买了 R6100。 原厂系统​    用了几天原厂系统，感觉没有什么亮点，系统设置响应非常慢，于是准备直接安装LEDE。 方法​    官方提供四种安装方法Installing OpenWrt 。我使用Method 1: via OEM firmware安装LEDE，选择Method">
+<meta name="description" content="​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。只有折腾 R6100了。">
+<meta name="keywords" content="Tech">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NETGEAR R6100 安装lEDE">
-<meta property="og:url" content="http://rabbitetn.com/2017/12/28/r6100/index.html">
+<meta property="og:url" content="http://rabbitetn.com/2017/12/28/netgear-r6100/index.html">
 <meta property="og:site_name" content="十八只兔子">
-<meta property="og:description" content="​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。于是买了 R6100。 原厂系统​    用了几天原厂系统，感觉没有什么亮点，系统设置响应非常慢，于是准备直接安装LEDE。 方法​    官方提供四种安装方法Installing OpenWrt 。我使用Method 1: via OEM firmware安装LEDE，选择Method">
+<meta property="og:description" content="​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。只有折腾 R6100了。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://rabbitetn.com/images/2017120901.PNG">
 <meta property="og:image" content="http://rabbitetn.com/images/2017122902.PNG">
 <meta property="og:image" content="http://rabbitetn.com/images/2017122903.PNG">
 <meta property="og:image" content="https://www.vultr.com/media/banner_1.png">
-<meta property="og:updated_time" content="2017-12-28T17:57:52.000Z">
+<meta property="og:updated_time" content="2017-12-29T04:39:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NETGEAR R6100 安装lEDE">
-<meta name="twitter:description" content="​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。于是买了 R6100。 原厂系统​    用了几天原厂系统，感觉没有什么亮点，系统设置响应非常慢，于是准备直接安装LEDE。 方法​    官方提供四种安装方法Installing OpenWrt 。我使用Method 1: via OEM firmware安装LEDE，选择Method">
+<meta name="twitter:description" content="​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 v1，但这货已经停产，能买到的只有v2 。只有折腾 R6100了。">
 <meta name="twitter:image" content="http://rabbitetn.com/images/2017120901.PNG">
 
 
@@ -124,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://rabbitetn.com/2017/12/28/r6100/"/>
+  <link rel="canonical" href="http://rabbitetn.com/2017/12/28/netgear-r6100/"/>
 
 
 
@@ -237,7 +238,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://rabbitetn.com/2017/12/28/r6100/">
+    <link itemprop="mainEntityOfPage" href="http://rabbitetn.com/2017/12/28/netgear-r6100/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="RabbitETN">
@@ -304,15 +305,15 @@
       
 
       
-        <p>​    最近准备折腾一下LEDE，度娘比较推荐网件WNDR4300 <em>v1</em>，但这货已经停产，能买到的只有<em>v2</em> 。于是买了 R6100。</p>
-<h3 id="原厂系统"><a href="#原厂系统" class="headerlink" title="原厂系统"></a>原厂系统</h3><p>​    用了几天原厂系统，感觉没有什么亮点，系统设置响应非常慢，于是准备直接安装LEDE。</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>​    官方提供四种安装方法<a href="https://wiki.openwrt.org/doc/howto/generic.flashing" target="_blank" rel="noopener">Installing OpenWrt</a> 。我使用Method 1: via OEM firmware安装LEDE，选择Method 2: via Bootloader and an Ethernet port 恢复原厂固件。</p>
+        <p>​    最近准备学习一下LEDE，度娘比较推荐网件WNDR4300 <em>v1</em>，但这货已经停产，能买到的只有<em>v2</em> 。只有折腾 R6100了。</p>
 <a id="more"></a>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol>
+<h3 id="原厂系统"><a href="#原厂系统" class="headerlink" title="原厂系统"></a>原厂系统</h3><p>​    用了几天原厂系统，网速还比较满意，管理端响应非常慢。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>​    官方提供四种安装方法<a href="https://wiki.openwrt.org/doc/howto/generic.flashing" target="_blank" rel="noopener">Installing OpenWrt</a> 。我使用Method 1: via OEM firmware安装LEDE，选择Method 2: via Bootloader and an Ethernet port 恢复原厂固件。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
 <li><p>下载 R6100 固件<a href="https://downloads.lede-project.org/releases/17.01.4/targets/ar71xx/nand/lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img" target="_blank" rel="noopener">lede-17.01.4-ar71xx-nand-r6100-ubi-factory.img</a></p>
 </li>
 <li><p>网线连接路由器LAN口</p>
-</li>
+<ul>
 <li><p>打开路由器管理端</p>
 </li>
 <li><p>点击管理-固件升级</p>
@@ -321,45 +322,50 @@
 </li>
 <li><p>点击安装，waiting…</p>
 </li>
-<li><p>看到重新获取到IP后就可以登陆管理端了</p>
+<li><p>重新获取到IP后，登陆管理端</p>
 </li>
 <li><p>第一次登陆没有密码</p>
 <p><img src="/images/2017120901.PNG" alt=""></p>
 </li>
-<li><p>状态信息</p>
+<li><p>登陆后可以看到状态信息</p>
 </li>
-</ol>
+</ul>
+</li>
+</ul>
 <p><img src="/images/2017122902.PNG" alt=""></p>
-<h3 id="恢复原厂固件"><a href="#恢复原厂固件" class="headerlink" title="恢复原厂固件"></a>恢复原厂固件</h3><ol>
-<li><p>网件中文官网下载固件R6100-V1.2.0.4.img，并放在用户目录下</p>
-</li>
+<h3 id="恢复原厂固件"><a href="#恢复原厂固件" class="headerlink" title="恢复原厂固件"></a>恢复原厂固件</h3><p>​    想要恢复原厂固件也是可以的，步骤如下</p>
+<ul>
 <li><p>网线连接路由器LAN口</p>
 </li>
+<li><p>网件<strong>中文</strong>官网下载固件R6100-V1.2.0.4.img，并放在用户目录(eg. C:\Users\apple)下</p>
+<ul>
 <li><p>开启TFTP client</p>
 <p><img src="/images/2017122903.PNG" alt=""></p>
 </li>
 <li><p>打开cmd，输入ping 192.168.1.1 –t</p>
 </li>
-<li><p>再打开一个cmd，输入TFTP -i 192.168.1.1 PUT R6100-V1.2.0.4.img</p>
+<li><p>再打开一个cmd，输入TFTP -i 192.168.1.1 PUT R6100-V1.2.0.4.img，不要回车</p>
 </li>
 <li><p>戳reset不放，拔掉电源再接上，看第一个cmd窗口ping通了后，在第二个cmd窗口回车</p>
 </li>
-<li><p>第二个cmd窗口出现传输成功提示后，松开reset</p>
+<li><p>第二个cmd窗口出现<strong>传输成功</strong>提示后，松开reset</p>
 </li>
 <li><p>waiting…</p>
 </li>
-<li><p>看到重新获取到IP后就可以登陆原厂管理端了</p>
+<li><p>重新获取到IP后，打开管理端确认</p>
 </li>
-</ol>
+</ul>
+</li>
+</ul>
 <h3 id="有什么用呢"><a href="#有什么用呢" class="headerlink" title="有什么用呢"></a>有什么用呢</h3><p>​    你猜</p>
-<h3 id="敲黑板、重点来了"><a href="#敲黑板、重点来了" class="headerlink" title="敲黑板、重点来了"></a>敲黑板、重点来了</h3><ol>
+<h3 id="敲黑板"><a href="#敲黑板" class="headerlink" title="敲黑板"></a>敲黑板</h3><ul>
 <li>LEDE是openwrt的一个分支</li>
 <li><strong>WNDR4300</strong> <em>v1</em>可以安装openwrt/lEDE，但已经停产</li>
 <li><strong>WNDR4300</strong> <em>v2</em> 目前不能安装openwrt/lEDE</li>
 <li><strong>R6100</strong> 可以安装 openwrt/lEDE</li>
 <li><strong>R6100</strong> 5G信号问题已经解决</li>
-</ol>
-<p><a href="https://www.vultr.com/?ref=7285317" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banner_1.png" width="728" height="90"></a></p>
+</ul>
+<p><a href="https://www.vultr.com/?ref=7285317" target="_blank" rel="noopener"><img src="https://www.vultr.com/media/banner_1.png" alt=""></a></p>
 
       
     </div>
@@ -374,6 +380,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Tech/" rel="tag"># Tech</a>
+          
+        </div>
       
 
       
@@ -462,6 +474,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -506,7 +527,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原厂系统"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x539F;&#x5382;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x539F;&#x5382;&#x7CFB;&#x7EDF;"></a>&#x539F;&#x5382;&#x7CFB;&#x7EDF;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x65B9;&#x6CD5;" class="headerlink" title="&#x65B9;&#x6CD5;"></a>&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恢复原厂固件"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;" class="headerlink" title="&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;"></a>&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有什么用呢"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;" class="headerlink" title="&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;"></a>&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#敲黑板、重点来了"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x6572;&#x9ED1;&#x677F;&#x3001;&#x91CD;&#x70B9;&#x6765;&#x4E86;" class="headerlink" title="&#x6572;&#x9ED1;&#x677F;&#x3001;&#x91CD;&#x70B9;&#x6765;&#x4E86;"></a>&#x6572;&#x9ED1;&#x677F;&#x3001;&#x91CD;&#x70B9;&#x6765;&#x4E86;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原厂系统"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x539F;&#x5382;&#x7CFB;&#x7EDF;" class="headerlink" title="&#x539F;&#x5382;&#x7CFB;&#x7EDF;"></a>&#x539F;&#x5382;&#x7CFB;&#x7EDF;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x65B9;&#x6CD5;" class="headerlink" title="&#x65B9;&#x6CD5;"></a>&#x65B9;&#x6CD5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恢复原厂固件"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;" class="headerlink" title="&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;"></a>&#x6062;&#x590D;&#x539F;&#x5382;&#x56FA;&#x4EF6;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有什么用呢"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;" class="headerlink" title="&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;"></a>&#x6709;&#x4EC0;&#x4E48;&#x7528;&#x5462;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#敲黑板"><span class="nav-number">6.</span> <span class="nav-text"><a href="#&#x6572;&#x9ED1;&#x677F;" class="headerlink" title="&#x6572;&#x9ED1;&#x677F;"></a>&#x6572;&#x9ED1;&#x677F;</span></a></li></ol></div>
             
 
           </div>
